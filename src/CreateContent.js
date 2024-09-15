@@ -38,7 +38,7 @@ const CreateContent = () => {
         }
 
         try {
-            const response = await axios.post("http://localhost:8081/api/content", formData, {
+            const response = await axios.post("https://self-destruct-content-sharing-2b4ed394ac66.herokuapp.com/api/content", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
             setShareableLink(response.data);
